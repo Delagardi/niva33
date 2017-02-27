@@ -1,0 +1,89 @@
+$widthPage: 1220px;
+$redDesign: #eb2f2e;
+
+// Font Face Mixin start
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+  $src: null;
+
+  $extmods: (
+    eot: "?",
+    svg: "#" + str-replace($name, " ", "_")
+  );
+
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+// Font Face Mixin end
+%fontText {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+%fontHeaderLink {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+}
+
+%fontHeaderAdditional {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #f1f1f1;
+}
+
+%fontHeaderCar {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: #fff;
+}
+
+%fontHeaderCar__change {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #a2a2a2;
+}
+
+%fontNavigation {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+}
+
+%fontSearch {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #000;
+}
+
+%fontSearchLink {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #000;
+}
+
+%fontMainAdditional {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}

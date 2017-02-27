@@ -1,0 +1,299 @@
+@import "vendor/_mynormalize.scss";
+@import "partials/_base.scss";
+
+/*=======================================================*/
+/* COMMON STYLE START */
+/*=======================================================*/
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+body {
+  @extend %fontText;
+  
+  background: #f3f3f3;
+}
+
+.wrapper {
+  width: 100%;
+}
+/*=======================================================*/
+/* COMMON STYLE END */
+/*=======================================================*/
+
+/*=======================================================*/
+/* HEADER STYLE START */
+/*=======================================================*/
+
+.bg-header {
+  background: #000;
+  width: 100%;
+  border-bottom: 4px solid $redDesign;
+}
+
+.header {
+  width: $widthPage;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  margin: 25px 0 25px 45px; 
+}
+
+.header-logo__img {
+  display: block;
+  width: 269px;
+  height: 39px;
+  background: url("../img/logo.png") no-repeat;
+}
+
+.header-contacts {
+  width: 200px;
+  text-align: center;
+  padding-top: 20px;
+
+  a {
+    @extend %fontHeaderLink;
+  }
+  span {
+    @extend %fontHeaderAdditional;
+  }
+}
+
+.header-user {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+  .header-user__text {
+    margin-right: 100px;
+    color: #f2f2f2;
+    
+    .header-user__question {
+      @extend %fontHeaderAdditional;
+      
+      display: block;
+
+      &:hover {
+        color: #fff
+      }
+    }
+  }
+}
+
+.header-user__icons {
+  position: relative;
+
+  .header-user__icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    top: -13px;
+  }
+
+  .cart {
+    background: url("../img/sprites.png") -48px 0 no-repeat;
+    right: 50px;
+
+    &:hover {
+      background: url("../img/sprites.png") -73px 0 no-repeat;
+    }
+  }
+
+  .account {
+    background: url("../img/sprites.png") 0 0 no-repeat;
+    right: 10px;
+
+    &:hover {
+      background: url("../img/sprites.png") -24px 0 no-repeat;
+    }
+  }
+}
+
+.header-car__trademark {
+  @extend %fontHeaderCar;
+}
+
+.header-car__change {
+  @extend %fontHeaderCar__change;
+
+  display: block;
+  text-align: center;
+  border-bottom: dotted 1px #a2a2a2;
+}
+
+.bg-menu {
+  background: #343334;
+  width: 100%;
+}
+
+nav {
+  width: $widthPage;
+  margin: 0 auto;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+
+    li {
+      line-height: 50px;
+      margin: 0 25px;
+
+      a {
+        @extend %fontNavigation;
+        display: block;
+      }
+    }
+  }
+}
+
+/*=======================================================*/
+/* HEADER STYLE END */
+/*=======================================================*/
+
+/*=======================================================*/
+/* SLIDER STYLE START */
+/*=======================================================*/
+
+
+.bg-slide {
+  background: url("../img/bg.jpg") no-repeat;
+  background-position: center center;
+  width: 100%;
+  min-height: 656px;
+  margin-top: -1px;
+}
+
+.search {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 36px;
+
+  .search-link {
+    @extend %fontSearchLink;
+    position: absolute;
+    right: 17px;
+    top: 53px;
+  }
+
+  .search-menu {
+    content: "";
+    background: url("../img/sprites.png") 0 -25px no-repeat;
+    width: 40px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    left: 17px;
+    top: 49px;
+    border-right: 1px solid #000;
+    padding-right: 50px;
+  }
+}
+
+input[type="search"] {
+  @extend %fontSearch;
+  border-color: $redDesign;
+  width: 700px;
+  height: 55px;
+  border-radius: 7px;
+  background: rgba(255,255,255, 0.7);
+  padding-left: 80px;
+  padding-right: 80px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+/*=======================================================*/
+/* SLIDER STYLE END */
+/*=======================================================*/
+
+/*=======================================================*/
+/* LIST STYLE START */
+/*=======================================================*/
+
+.main-list {
+  margin: 0 auto;
+  width: $widthPage;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+  
+    li {
+      width: 23px;
+      height: 20px;
+      text-align: center;
+
+      a {
+        display: block;
+
+      &:hover {
+        border-radius: 10px;
+        background: $redDesign;
+      }
+    }
+    }
+  }
+}
+
+.main-list__all {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  a {
+    @extend %fontMainAdditional;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 40px;
+      height: 24px;
+      background: url("../img/sprites.png") 0 -55px no-repeat;
+      position: absolute;
+      top: 17px;
+      left: 45px;
+    }
+  }
+}
+
+/*=======================================================*/
+/* LIST STYLE END */
+/*=======================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
