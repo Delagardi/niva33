@@ -423,6 +423,59 @@ input[type="search"] {
   font-family: 'Roboto', sans-serif;
   font-size: 12px; }
 
+h2, .main h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  color: #2f2f2f; }
+
+.main .main-headers__showall {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #3b3b3b; }
+
+.main-items ul li .item-headers h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #010101; }
+
+.main-items ul li .item-headers span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #010101; }
+
+.main-items ul li .item-code .item-code__text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  color: #494949;
+  text-transform: uppercase; }
+
+.main-items ul li .item-code .item-code__number {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  text-transform: uppercase; }
+
+.main-items ul li .item-prices {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: #2f2f2f; }
+
+.main-items ul li .item-btn a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #b6b6b6; }
+
+.footer .footer-contacts {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase; }
+
+.footer .copyright {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase; }
+
 /*=======================================================*/
 /* COMMON STYLE START */
 /*=======================================================*/
@@ -514,6 +567,42 @@ body {
   display: block;
   text-align: center;
   border-bottom: dotted 1px #a2a2a2; }
+
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7) repeat;
+  text-align: center; }
+
+.lightbox-list {
+  width: 1220px;
+  margin: 250px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .lightbox-list li {
+    position: relative;
+    width: 300px;
+    margin-right: 50px;
+    margin-bottom: 200px; }
+    .lightbox-list li:nth-child(3n) {
+      margin-right: 0; }
+    .lightbox-list li .lightbox-logo {
+      position: absolute;
+      display: block;
+      width: 293px;
+      height: 155px; }
+    .lightbox-list li .niva {
+      background: url("../upload/logos/niva.png") no-repeat; }
+    .lightbox-list li .lada {
+      background: url("../upload/logos/lada.png") no-repeat; }
+    .lightbox-list li .renault {
+      background: url("../upload/logos/renault.png") no-repeat; }
+    .lightbox-list li .uaz {
+      background: url("../upload/logos/uaz.png") no-repeat; }
 
 .bg-menu {
   background: #343334;
@@ -616,6 +705,112 @@ input[type="search"] {
 
 /*=======================================================*/
 /* LIST STYLE END */
+/*=======================================================*/
+/*=======================================================*/
+/* CONTENT STYLE START */
+/*=======================================================*/
+.main {
+  margin: 0 auto;
+  width: 1220px; }
+  .main h2 {
+    position: relative;
+    display: inline-block;
+    padding-left: 15px;
+    width: 1080px; }
+    .main h2:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 6px;
+      left: 2px;
+      border: 9px solid transparent;
+      border-left: 8px solid #9a9a9a; }
+
+.main-items {
+  margin-bottom: 30px; }
+  .main-items ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .main-items ul li {
+      width: 202px;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+      min-height: 335px;
+      -webkit-box-shadow: 0px 3px 20px -6px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0px 3px 20px -6px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 3px 20px -6px rgba(0, 0, 0, 0.5);
+      margin-right: 130px;
+      margin-bottom: 100px;
+      position: relative; }
+      .main-items ul li:nth-child(4n) {
+        margin-right: 0; }
+      .main-items ul li:hover {
+        -webkit-box-shadow: 0px 3px 30px -6px rgba(234, 80, 80, 0.5);
+        -moz-box-shadow: 0px 3px 30px -6px rgba(234, 80, 80, 0.5);
+        box-shadow: 0px 3px 30px -6px rgba(234, 80, 80, 0.5); }
+      .main-items ul li .item-flag {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: -5px; }
+      .main-items ul li .flag-new {
+        background: url("../img/sprites.png") 0 -104px no-repeat;
+        width: 80px;
+        height: 24px; }
+      .main-items ul li .flag-profitable {
+        background: url("../img/sprites.png") 0 -80px no-repeat;
+        width: 120px;
+        height: 24px; }
+      .main-items ul li .item-img img {
+        padding: 2px;
+        -webkit-box-shadow: 0px 3px 10px -5px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 3px 10px -5px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 3px 10px -5px rgba(0, 0, 0, 0.75); }
+      .main-items ul li .item-headers {
+        padding: 20px 14px 10px 14px; }
+        .main-items ul li .item-headers h4 {
+          margin: 0; }
+      .main-items ul li .item-code {
+        margin: 0 14px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #c1c1c1; }
+      .main-items ul li .item-prices {
+        margin: 14px 14px; }
+      .main-items ul li .item-btn {
+        margin: 5px 20px; }
+        .main-items ul li .item-btn a {
+          display: block;
+          width: 160px;
+          height: 35px;
+          line-height: 35px;
+          text-align: center;
+          border: 1px solid #dddddd; }
+          .main-items ul li .item-btn a:hover {
+            border: 1px solid transparent;
+            color: #fff;
+            background: #e5616a; }
+
+/*=======================================================*/
+/* CONTENT STYLE END */
+/*=======================================================*/
+/*=======================================================*/
+/* FOOTER STYLE START */
+/*=======================================================*/
+.bg-footer {
+  background: #222222; }
+
+.footer {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 1220px;
+  color: #fff; }
+  .footer .footer-contacts ul {
+    padding: 30px 0; }
+
+/*=======================================================*/
+/* FOOTER STYLE END */
 /*=======================================================*/
 
 /*# sourceMappingURL=main.css.map */

@@ -5,6 +5,8 @@
   <title>NIVA33</title>
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
 <body>
   <div class="bg-header wrapper">
@@ -26,7 +28,7 @@
         </div>
         <div class="header-user__car">
           <span class="header-car__trademark">УАЗ</span>
-          <a class="header-car__change" href="#">Сменить</a>
+          <a class="header-car__change lightbox_trigger" href="#">Сменить</a>
         </div>
       </div>
     </div>
@@ -88,21 +90,22 @@
     <div class="main">
       <div class="main-specials">
         <div class="main-headers">
-          <h1>Специальное предложение для УАЗ</h1>
-          <a href="#">Просмотреть все</a>
+          <h2>Специальное предложение для УАЗ</h2>
+          <a class="main-headers__showall" href="#">Просмотреть все</a>
         </div>
         <div class="main-items">
           <ul>
             <li>
+              <div class="item-flag flag-new"></div>
               <div class="item-img">
-                <img src="#">
+                <img width="196" height="124" src="upload/items/item1.jpg">
               </div>
               <div class="item-headers">
                 <h4>Бампер силовой</h4>
                 <span>под лебедку «УАЗ»</span>  
               </div>
               <div class="item-code">
-                <span class="item-code__text">Артикул</span>
+                <span class="item-code__text">Артикул:</span>
                 <span class="item-code__number">746348478</span>
               </div>
               <div class="item-prices">
@@ -114,15 +117,16 @@
               </div>
             </li>
             <li>
+              <div class="item-flag flag-profitable"></div>
               <div class="item-img">
-                <img src="#">
+                <img width="196" height="124" src="upload/items/item1.jpg">
               </div>
               <div class="item-headers">
                 <h4>Бампер силовой</h4>
                 <span>под лебедку «УАЗ»</span>  
               </div>
               <div class="item-code">
-                <span class="item-code__text">Артикул</span>
+                <span class="item-code__text">Артикул:</span>
                 <span class="item-code__number">746348478</span>
               </div>
               <div class="item-prices">
@@ -134,15 +138,16 @@
               </div>
             </li>
             <li>
+              <div class="item-flag"></div>
               <div class="item-img">
-                <img src="#">
+                <img width="196" height="124" src="upload/items/item1.jpg">
               </div>
               <div class="item-headers">
                 <h4>Бампер силовой</h4>
                 <span>под лебедку «УАЗ»</span>  
               </div>
               <div class="item-code">
-                <span class="item-code__text">Артикул</span>
+                <span class="item-code__text">Артикул:</span>
                 <span class="item-code__number">746348478</span>
               </div>
               <div class="item-prices">
@@ -154,15 +159,100 @@
               </div>
             </li>
             <li>
+              <div class="item-flag"></div>
               <div class="item-img">
-                <img src="#">
+                <img width="196" height="124" src="upload/items/item1.jpg">
               </div>
               <div class="item-headers">
                 <h4>Бампер силовой</h4>
                 <span>под лебедку «УАЗ»</span>  
               </div>
               <div class="item-code">
-                <span class="item-code__text">Артикул</span>
+                <span class="item-code__text">Артикул:</span>
+                <span class="item-code__number">746348478</span>
+              </div>
+              <div class="item-prices">
+                <span class="item-prices__sum">14 900</span>
+                <span class="item-prices__currency">Р</span>
+              </div>
+              <div class="item-btn">
+                <a class="item-btn__link" href="#">Купить</a>
+              </div>
+            </li>
+            <li>
+              <div class="item-flag"></div>
+              <div class="item-img">
+                <img width="196" height="124" src="upload/items/item1.jpg">
+              </div>
+              <div class="item-headers">
+                <h4>Бампер силовой</h4>
+                <span>под лебедку «УАЗ»</span>  
+              </div>
+              <div class="item-code">
+                <span class="item-code__text">Артикул:</span>
+                <span class="item-code__number">746348478</span>
+              </div>
+              <div class="item-prices">
+                <span class="item-prices__sum">14 900</span>
+                <span class="item-prices__currency">Р</span>
+              </div>
+              <div class="item-btn">
+                <a class="item-btn__link" href="#">Купить</a>
+              </div>
+            </li>
+            <li>
+              <div class="item-flag"></div>
+              <div class="item-img">
+                <img width="196" height="124" src="upload/items/item1.jpg">
+              </div>
+              <div class="item-headers">
+                <h4>Бампер силовой</h4>
+                <span>под лебедку «УАЗ»</span>  
+              </div>
+              <div class="item-code">
+                <span class="item-code__text">Артикул:</span>
+                <span class="item-code__number">746348478</span>
+              </div>
+              <div class="item-prices">
+                <span class="item-prices__sum">14 900</span>
+                <span class="item-prices__currency">Р</span>
+              </div>
+              <div class="item-btn">
+                <a class="item-btn__link" href="#">Купить</a>
+              </div>
+            </li>
+            <li>
+              <div class="item-flag"></div>
+              <div class="item-img">
+                <img width="196" height="124" src="upload/items/item1.jpg">
+              </div>
+              <div class="item-headers">
+                <h4>Бампер силовой</h4>
+                <span>под лебедку «УАЗ»</span>  
+              </div>
+              <div class="item-code">
+                <span class="item-code__text">Артикул:</span>
+                <span class="item-code__number">746348478</span>
+              </div>
+              <div class="item-prices">
+                <span class="item-prices__sum">14 900</span>
+                <span class="item-prices__currency">Р</span>
+              </div>
+              <div class="item-btn">
+                <a class="item-btn__link" href="#">Купить</a>
+              </div>
+            </li>
+            <li>
+              <div class="item-flag"></div>
+              <div class="item-img">
+                <img width="196" height="124" src="upload/items/item1.jpg">
+              </div>
+              <div class="item-headers">
+                <h4>Бампер силовой</h4>
+                <span>под лебедку «УАЗ»</span>  
+              </div>
+              <div class="item-code">
+                <span class="item-code__text">Артикул:</span>
                 <span class="item-code__number">746348478</span>
               </div>
               <div class="item-prices">
@@ -178,21 +268,22 @@
       </div>
       <div class="main-accessories">
         <div class="main-headers">
-          <h1>Аксессуары для УАЗ</h1>
-          <a href="#">Просмотреть все</a>
+          <h2>Аксессуары для УАЗ</h2>
+          <a class="main-headers__showall" href="#">Просмотреть все</a>
         </div>
         <div class="main-items">
           <ul>
             <li>
+              <div class="item-flag"></div>
               <div class="item-img">
-                <img src="#">
+                <img width="196" height="124" src="upload/items/item2.jpg">
               </div>
               <div class="item-headers">
                 <h4>Аккумулятор “BOSCH”</h4>
                 <span>для «УАЗ»</span>  
               </div>
               <div class="item-code">
-                <span class="item-code__text">Артикул</span>
+                <span class="item-code__text">Артикул:</span>
                 <span class="item-code__number">746348478</span>
               </div>
               <div class="item-prices">
@@ -204,15 +295,16 @@
               </div>
             </li>
             <li>
+              <div class="item-flag"></div>
               <div class="item-img">
-                <img src="#">
+                <img width="196" height="124" src="upload/items/item2.jpg">
               </div>
               <div class="item-headers">
                 <h4>Аккумулятор “BOSCH”</h4>
                 <span>для «УАЗ»</span>  
               </div>
               <div class="item-code">
-                <span class="item-code__text">Артикул</span>
+                <span class="item-code__text">Артикул:</span>
                 <span class="item-code__number">746348478</span>
               </div>
               <div class="item-prices">
@@ -224,15 +316,16 @@
               </div>
             </li>
             <li>
+              <div class="item-flag"></div>
               <div class="item-img">
-                <img src="#">
+                <img width="196" height="124" src="upload/items/item2.jpg">
               </div>
               <div class="item-headers">
                 <h4>Аккумулятор “BOSCH”</h4>
                 <span>для «УАЗ»</span>  
               </div>
               <div class="item-code">
-                <span class="item-code__text">Артикул</span>
+                <span class="item-code__text">Артикул:</span>
                 <span class="item-code__number">746348478</span>
               </div>
               <div class="item-prices">
@@ -244,15 +337,16 @@
               </div>
             </li>
             <li>
+              <div class="item-flag"></div>
               <div class="item-img">
-                <img src="#">
+                <img width="196" height="124" src="upload/items/item2.jpg">
               </div>
               <div class="item-headers">
                 <h4>Аккумулятор “BOSCH”</h4>
                 <span>для «УАЗ»</span>  
               </div>
               <div class="item-code">
-                <span class="item-code__text">Артикул</span>
+                <span class="item-code__text">Артикул:</span>
                 <span class="item-code__number">746348478</span>
               </div>
               <div class="item-prices">
