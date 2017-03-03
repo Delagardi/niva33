@@ -509,6 +509,7 @@ body {
 .bg-header {
   background: #000;
   width: 100%;
+  min-width: 1220px;
   border-bottom: 4px solid #eb2f2e; }
 
 .header {
@@ -606,7 +607,8 @@ body {
 
 .bg-menu {
   background: #343334;
-  width: 100%; }
+  width: 100%;
+  min-width: 1220px; }
 
 nav {
   width: 1220px;
@@ -631,6 +633,7 @@ nav {
   background: url("../img/bg.jpg") no-repeat;
   background-position: center center;
   width: 100%;
+  min-width: 1220px;
   min-height: 656px;
   margin-top: -1px; }
 
@@ -799,7 +802,9 @@ input[type="search"] {
 /* FOOTER STYLE START */
 /*=======================================================*/
 .bg-footer {
-  background: #222222; }
+  background: #222222;
+  width: 100%;
+  min-width: 1220px; }
 
 .footer {
   margin: 0 auto;
