@@ -629,8 +629,116 @@ input[type="search"] {
 /* CART PAGE END */
 /*=======================================================*/
 
+/*=======================================================*/
+/* LOGIN PAGE END */
+/*=======================================================*/
 
+.login-page {
+  margin: 0px auto;
+  width: $widthPage;
+  min-height: 500px;
 
+  .tabs {
+    margin: 0 auto;
+    text-align: center;
 
+    a {
+      @extend %fontTabs;
+      padding: 5px 30px;
+      line-height: 30px;
+      display: inline-block;
+      border: 1px solid #d0d0d0;
 
+      &:active {
+        background: $redDesign;
+        color: #fff;
+      }
+    }
+    .active {
+      background: $redDesign;
+      color: #fff;
+    }
+    #tab-login {
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+    #tab-signup {
+      margin-left: -5px;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  }
+}
 
+#login, #signup {
+  @extend %fontLoginPage;
+  margin: 65px auto;
+  width: 406px;
+  transition: 0.3s;
+
+  ul {
+    li {
+      margin-bottom: 30px;
+
+      span {
+        display: inline-block;
+        width: 120px;
+      }
+    }
+  }
+}
+
+.tabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.login-email, .login-pass {
+  width: 280px;
+  height: 45px;
+  background: #f3f3f3;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid #d0d0d0;
+  padding: 0 10px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.login-btn {
+  text-align: center;
+  float: right;
+
+  .login-btn__link {
+    @extend %fontLoginBtn;
+
+    padding: 10px 30px;
+    display: block;
+    background: $redDesign;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    &:hover {
+      background: darken($redDesign, 10%);
+    }
+  }
+  .login-forgot {
+    @extend %fontMainAdditional;
+    display: block;
+  }
+}
+/*=======================================================*/
+/* LOGIN PAGE END */
+/*=======================================================*/

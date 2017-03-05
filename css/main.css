@@ -419,7 +419,7 @@ input[type="search"] {
   font-size: 20px;
   color: #000; }
 
-.main-list__all a {
+.main-list__all a, .login-btn .login-forgot {
   font-family: 'Roboto', sans-serif;
   font-size: 12px; }
 
@@ -501,6 +501,23 @@ p {
   font-weight: 300;
   font-size: 28px;
   color: #1b1b1b; }
+
+.login-page .tabs a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #8f8f8f; }
+
+#login, #signup {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #000; }
+
+.login-btn .login-btn__link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #fff; }
 
 /*=======================================================*/
 /* COMMON STYLE START */
@@ -903,6 +920,88 @@ input[type="search"] {
 
 /*=======================================================*/
 /* CART PAGE END */
+/*=======================================================*/
+/*=======================================================*/
+/* LOGIN PAGE END */
+/*=======================================================*/
+.login-page {
+  margin: 0px auto;
+  width: 1220px;
+  min-height: 500px; }
+  .login-page .tabs {
+    margin: 0 auto;
+    text-align: center; }
+    .login-page .tabs a {
+      padding: 5px 30px;
+      line-height: 30px;
+      display: inline-block;
+      border: 1px solid #d0d0d0; }
+      .login-page .tabs a:active {
+        background: #eb2f2e;
+        color: #fff; }
+    .login-page .tabs .active {
+      background: #eb2f2e;
+      color: #fff; }
+    .login-page .tabs #tab-login {
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px; }
+    .login-page .tabs #tab-signup {
+      margin-left: -5px;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px; }
+
+#login, #signup {
+  margin: 65px auto;
+  width: 406px;
+  transition: 0.3s; }
+  #login ul li, #signup ul li {
+    margin-bottom: 30px; }
+    #login ul li span, #signup ul li span {
+      display: inline-block;
+      width: 120px; }
+
+.tabcontent {
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+  /* Fading effect takes 1 second */ }
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.login-email, .login-pass {
+  width: 280px;
+  height: 45px;
+  background: #f3f3f3;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid #d0d0d0;
+  padding: 0 10px; }
+  .login-email:focus, .login-pass:focus {
+    outline: none; }
+
+.login-btn {
+  text-align: center;
+  float: right; }
+  .login-btn .login-btn__link {
+    padding: 10px 30px;
+    display: block;
+    background: #eb2f2e;
+    margin-bottom: 10px;
+    border-radius: 5px; }
+    .login-btn .login-btn__link:hover {
+      background: #d21514; }
+  .login-btn .login-forgot {
+    display: block; }
+
+/*=======================================================*/
+/* LOGIN PAGE END */
 /*=======================================================*/
 
 /*# sourceMappingURL=main.css.map */

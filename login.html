@@ -5,8 +5,7 @@
   <title>NIVA33</title>
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/tabs.js"></script>
 </head>
 <body>
   <div class="bg-header wrapper">
@@ -56,40 +55,40 @@
   <div class="wrapper">
     <div class="login-page">
       <div class="tabs">
-        <a href="#">Войти</a>
-        <a href="#">Регистрация</a>
+        <a id="tab-login" href="javascript:void(0)" class="tablinks" onclick="openForm(event, 'login')">Войти</a>
+        <a id="tab-signup" href="javascript:void(0)" class="tablinks" onclick="openForm(event, 'signup')">Регистрация</a>
       </div>
       <div id="login" class="tabcontent">
         <ul>
           <li>
-            <span>Логин/email</span>
-            <input type="text" name="email">
+            <span>Логин/email:</span>
+            <input class="login-email" type="text" name="email">
           </li>
           <li>
-            <span>Пароль</span>
-            <input type="password" name="pass">
+            <span>Пароль:</span>
+            <input class="login-pass" type="password" name="pass">
           </li>
         </ul>
-        <div>
-          <a href="#">Войти</a>
-          <span>Забыли пароль?</span>
+        <div class="login-btn">
+          <a class="login-btn__link" href="#">Войти</a>
+          <a class="login-forgot" href="#">Забыли пароль?</a>
         </div>
       </div>
-      <!-- <div id="signup" class="tabcontent">
+      <div id="signup" class="tabcontent">
         <ul>
           <li>
-            <span>Логин/email</span>
-            <input type="text" name="email">
+            <span>Логин/email:</span>
+            <input class="login-email" type="text" name="email">
           </li>
           <li>
-            <span>Пароль</span>
-            <input type="password" name="pass">
+            <span>Пароль:</span>
+            <input class="login-pass" type="password" name="pass">
           </li>
         </ul>
-        <div>
-          <a href="#">Зарегистрироваться</a>
+        <div class="login-btn">
+          <a class="login-btn__link" href="#">Зарегистрироваться</a>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
   <div class="bg-footer wrapper">
