@@ -30,8 +30,16 @@ body {
   background: #f3f3f3;
 }
 
+h1 {
+  @extend %fontHeaderH1;
+}
+
 h2 {
   @extend %fontHeaderH2;
+}
+
+p {
+  @extend %fontParagraph;
 }
 
 .wrapper {
@@ -252,6 +260,7 @@ nav {
   width: 700px;
   margin: 0 auto;
   padding-top: 36px;
+  padding-bottom: 36px;
 
   .search-link {
     @extend %fontSearchLink;
@@ -382,11 +391,9 @@ input[type="search"] {
   margin-bottom: 30px;
 
   ul {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 
     li {
+      display: inline-block;
       width: 202px;
       border: 1px solid #dddddd;
       border-radius: 4px;
@@ -525,6 +532,104 @@ input[type="search"] {
 /*=======================================================*/
 /* FOOTER STYLE END */
 /*=======================================================*/
+
+/*=======================================================*/
+/* SEARCH RESULT START */
+/*=======================================================*/
+
+.search-result {
+  margin: 50px auto;
+  width: $widthPage;
+}
+
+.search-links {
+  padding: 35px;
+
+  .search-category {
+    @extend %fontSearchResult;
+
+    color: #86a2ad;
+  }
+  .search-number {
+    @extend %fontSearchResult;    
+  }
+}
+
+/*=======================================================*/
+/* SEARCH RESULT END */
+/*=======================================================*/
+
+/*=======================================================*/
+/* TEXT PAGE START */
+/*=======================================================*/
+.breadcrumbs {
+  margin-bottom: 30px;
+
+  li {
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+    
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 7px;
+      right: -24px;
+      border: 6px solid transparent;
+      border-left: 6px solid #9a9a9a;
+    }
+    &:last-of-type {
+      &:after {
+        border-color: transparent;
+      }
+    }
+    a {
+      @extend %fontBreadcrumbs;
+    }
+  }
+}
+
+.main-text {
+  margin: 0px auto;
+  width: $widthPage;
+}
+
+.main-textblock {
+  margin-bottom: 50px;
+  min-height: 500px;
+
+  ul {
+    list-style: disc;
+    list-style-image: url("../img/textList.png");
+    padding-left: 30px;
+
+    li {
+      @extend %fontTextList;
+
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/*=======================================================*/
+/* TEXT PAGE END */
+/*=======================================================*/
+
+/*=======================================================*/
+/* CART PAGE START */
+/*=======================================================*/
+.cart-page {
+  margin: 0px auto;
+  width: $widthPage;
+  min-height: 500px;
+}
+
+/*=======================================================*/
+/* CART PAGE END */
+/*=======================================================*/
+
+
 
 
 
