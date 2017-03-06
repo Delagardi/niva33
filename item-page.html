@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="js/jRate.js"></script> 
   <script src="js/main.js"></script>
 </head>
 <body>
@@ -54,21 +55,83 @@
     </div>
   </div>
   <div class="wrapper">
-    <div class="search-result">
-      <div class="search-headers">
-        <h1>Результаты поиска</h1>
-      </div>
-      <div class="search-links">
-        <span class="search-category">Аккумуляторы:</span>
-        <span class="search-number">3</span>
-      </div>
-    </div>
-  </div>
-  <div class="wrapper">
     <div class="main">
-      <div class="main-specials">
+      <div class="main-item">
+        <div class="breadcrumbs">
+          <ul>
+            <li><a href="#">УАЗ</a></li>
+            <li><a href="#">Подвеска</a></li>
+            <li><a href="#">Задняя подвеска</a></li>
+            <li><a href="#">Амортизаторы</a></li>
+          </ul>
+        </div>
+        <div class="item-headers">
+          <h1>Амортизатор для УАЗ от SS20</h1>
+        </div>
+        <div class="item-codes">
+          <span>АРТИКУЛ: </span><span>75483824</span>
+        </div>
+        <div class="item-content">
+          <div class="item-content-left">
+            <div class="item-photo">
+              <div class="item-photo__main">
+                <img width="458" height="378" src="upload/items/item-big.jpg">
+              </div>
+              <div class="item-photo__gallery">
+                <ul>
+                  <li><a href="#"><img width="120" height="98" src="upload/items/item-small1.jpg"></a></li>
+                  <li><a href="#"><img width="120" height="98" src="upload/items/item-small2.jpg"></a></li>
+                  <li><a href="#"><img width="120" height="98" src="upload/items/item-small1.jpg"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="item-info">
+              <h4>Общая информация</h4>
+              <table class="tg">
+                <tr>
+                  <td class="tg-yw4l">Тип</th>
+                  <td class="tg-yw4l">Синтетическое</th>
+                </tr>
+                <tr>
+                  <td class="tg-yw4l">Производитель</td>
+                  <td class="tg-yw4l">Castrol</td>
+                </tr>
+                <tr>
+                  <td class="tg-yw4l">Классификация API</td>
+                  <td class="tg-yw4l">SN/CF</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="item-content-right">
+            <div class="item-price">
+              <span class="item-price__text">1 490 р</span>
+            </div>
+            <div class="item-text">
+              <p>
+                До 75% износа двигателя происходит в первые минуты после пуска. Молекулы Castrol Magnatec удерживаются на поверхности двигателя Вашего автомобиля, образуя защитный слой, активный с первой секунды пуска.
+              </p>
+            </div>
+            <div class="item-options">
+              <div class="item-rating">
+                <span>Оценка покупателей</span>
+                <div id="jRate"></div>
+                <div id="demo-onchange-value"></div>
+              </div>
+              <div class="item-btns">
+                <div class="item-btn__buy">
+                  <a href="#">Купить</a>
+                </div>
+                <div class="item-bookmarks">
+                  <a class="item-bookmarks__link" href="#">В закладки</a>
+                  <span class="item-bookmarks__icon"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="main-headers">
-          <h2>Аккумуляторы</h2>
+          <h2>С этим покупают</h2>
           <a class="main-headers__showall" href="#">Просмотреть все</a>
         </div>
         <div class="main-items">
@@ -96,48 +159,6 @@
             </li>
             <li>
               <div class="item-flag flag-profitable"></div>
-              <div class="item-img">
-                <img width="196" height="124" src="upload/items/item1.jpg">
-              </div>
-              <div class="item-headers">
-                <h4>Бампер силовой</h4>
-                <span>под лебедку «УАЗ»</span>  
-              </div>
-              <div class="item-code">
-                <span class="item-code__text">Артикул:</span>
-                <span class="item-code__number">746348478</span>
-              </div>
-              <div class="item-prices">
-                <span class="item-prices__sum">14 900</span>
-                <span class="item-prices__currency">Р</span>
-              </div>
-              <div class="item-btn">
-                <a class="item-btn__link" href="#">Купить</a>
-              </div>
-            </li>
-            <li>
-              <div class="item-flag"></div>
-              <div class="item-img">
-                <img width="196" height="124" src="upload/items/item1.jpg">
-              </div>
-              <div class="item-headers">
-                <h4>Бампер силовой</h4>
-                <span>под лебедку «УАЗ»</span>  
-              </div>
-              <div class="item-code">
-                <span class="item-code__text">Артикул:</span>
-                <span class="item-code__number">746348478</span>
-              </div>
-              <div class="item-prices">
-                <span class="item-prices__sum">14 900</span>
-                <span class="item-prices__currency">Р</span>
-              </div>
-              <div class="item-btn">
-                <a class="item-btn__link" href="#">Купить</a>
-              </div>
-            </li>
-            <li>
-              <div class="item-flag"></div>
               <div class="item-img">
                 <img width="196" height="124" src="upload/items/item1.jpg">
               </div>

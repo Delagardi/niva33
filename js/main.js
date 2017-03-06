@@ -45,8 +45,21 @@ jQuery(document).ready(function($) {
   });
   
   //Click anywhere on the page to get rid of lightbox window
-  $('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+  $(document).on('click', "#lightbox", function() { //must use live, as the lightbox element is inserted into the DOM
     $('#lightbox').hide();
+  });
+
+  $("#jRate").jRate({
+    startColor: '#c21f1f',
+    endColor: '#c21f1f',
+    shape: 'CIRCLE',
+    backgroundColor: '#d4d4d4',
+    shapeGap: '10px',
+    strokeWidth: '0px',
+    precision: 0.5,
+    onChange: function(rating) {
+      $('#demo-onchange-value').text(rating);
+    }
   });
 
 });
