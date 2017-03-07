@@ -505,14 +505,16 @@ p {
   font-weight: 300;
 }
 
-.main-items ul li .item-headers h4 {
+.main-items ul li .item-headers h4,
+.cart-item .cart-item__headers h4 {
   color: #010101; 
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
 }
 
-.main-items ul li .item-headers span {
+.main-items ul li .item-headers span,
+.cart-item .cart-item__headers span {
   color: #010101; 
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -531,13 +533,27 @@ p {
   font-size: 10px;
 }
 
+.cart-item .cart-item__headers .cart-item-code__text {
+  text-transform: uppercase; 
+  color: #494949;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.cart-item .cart-item__headers .cart-item-code__number {
+  text-transform: uppercase; 
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
 .main-items ul li .item-prices {
   color: #2f2f2f; 
   font-family: "Roboto", sans-serif;
   font-size: 22px;
 }
 
-.main-items ul li .item-btn a {
+.main-items ul li .item-btn a,
+.cart-sum .cart-sum__btn a {
   color: #b6b6b6; 
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -602,6 +618,8 @@ p {
   font-size: 12px;
 }
 
+.cart-sum .cart-sum__text,
+.cart-sum .cart-sum__price,
 .item-headers h1 {
   color: #2f2f2f; 
   font-family: "Roboto", sans-serif;
@@ -650,6 +668,19 @@ p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 300;
+}
+
+.cart-item .cart-quantity span,
+.cart-item .cart-quantity a {
+  color: #848484; 
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+.cart-item .cart-item__prices {
+  color: #2f2f2f; 
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
 }
 
 /*=======================================================*/
@@ -1137,6 +1168,119 @@ input[type="search"]:focus {
   width: 1220px;
   min-height: 500px; 
   margin: 0 auto;
+}
+
+.cart-item {
+  position: relative;
+  float: left; 
+  width: 850px;
+  height: 175px;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 3px 20px -6px rgba(0, 0, 0, .5);
+     -moz-box-shadow: 0 3px 20px -6px rgba(0, 0, 0, .5);
+          box-shadow: 0 3px 20px -6px rgba(0, 0, 0, .5);
+}
+.cart-item .cart-item__flag {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 9px; 
+  display: block;
+}
+.cart-item .flag-new {
+  width: 80px;
+  height: 24px; 
+  background: url("../img/sprites.png") 0 -104px no-repeat;
+}
+.cart-item .flag-profitable {
+  width: 120px;
+  height: 24px; 
+  background: url("../img/sprites.png") 0 -80px no-repeat;
+}
+.cart-item .cart-item__img {
+  display: inline-block; 
+  width: 196px;
+  height: 124px;
+  margin: 16px;
+}
+.cart-item .cart-item__img img {
+  -webkit-box-shadow: 0 3px 10px -5px rgba(0, 0, 0, .75);
+     -moz-box-shadow: 0 3px 10px -5px rgba(0, 0, 0, .75);
+          box-shadow: 0 3px 10px -5px rgba(0, 0, 0, .75);
+}
+.cart-item .cart-item__headers {
+  display: inline-block;
+  width: 325px;
+  margin: 54px 10px 5px 40px;
+  vertical-align: top;
+}
+.cart-item .cart-item__headers h4 {
+  margin: 0;
+}
+.cart-item .cart-quantity {
+  position: relative; 
+  display: inline-block;
+  width: 50px;
+  height: 75px;
+  vertical-align: bottom;
+}
+.cart-item .cart-quantity span,
+.cart-item .cart-quantity a {
+  position: absolute;
+}
+.cart-item .cart-quantity .cart-quantity__plus {
+  top: -24px;
+  left: 10px;
+  padding: 5px 10px; 
+  border: 1px solid #ddd;
+}
+.cart-item .cart-quantity .cart-quantity__number {
+  top: 0;
+  left: 10px;
+  padding: 5px 10px; 
+  border: 1px solid #ddd;
+}
+.cart-item .cart-quantity .cart-quantity__minus {
+  bottom: 26px;
+  left: 10px;
+  padding: 5px 11px; 
+  border: 1px solid #ddd;
+}
+.cart-item .cart-item__prices {
+  display: inline-block;
+  width: 170px;
+  padding-top: 75px;
+  text-align: center; 
+  vertical-align: top;
+}
+
+.cart-sum {
+  float: left;
+  width: 300px;
+  margin-top: 25px; 
+  margin-left: 20px;
+}
+.cart-sum .cart-sum__text {
+  text-align: center;
+}
+.cart-sum .cart-sum__price {
+  text-align: center; 
+  font-size: 36px;
+}
+.cart-sum .cart-sum__btn {
+  margin: 5px 20px;
+}
+.cart-sum .cart-sum__btn a {
+  display: block;
+  width: 260px;
+  height: 35px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid transparent;
+  background: #e5616a; 
+  line-height: 35px;
 }
 
 /*=======================================================*/

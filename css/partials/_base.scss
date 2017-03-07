@@ -140,6 +140,19 @@ $redDesign: #eb2f2e;
   text-transform: uppercase;
 }
 
+%fontItemCodeText__cart {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #494949;
+  text-transform: uppercase;
+}
+
+%fontItemCodeNumber__cart {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
 %fontItemPrice {
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
@@ -258,5 +271,14 @@ $redDesign: #eb2f2e;
   color: #6d6d6d;
 }
 
+%fontCartQuantity {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #848484;
+}
 
-
+%fontItemPrice__cart {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  color: #2f2f2f;
+}
